@@ -18,10 +18,18 @@ input.form-control, input.form-control:focus {
   font-size: .7em;
   color: red;
 }
+
+/* Responsive */
+
 @media (max-width: 575.98px) {
   .image {
     display:none;
   }
 
 }
-
+@media (min-width: 1400px) { 
+  .form, .image {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
