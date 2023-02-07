@@ -29,10 +29,11 @@ export const SignUp = () => {
         confirmPassword: '',
       }}
       validationSchema={formValidation}
+      onSubmit={(values) => console.log(values)}
     >
       {(formik) => (
         <div>
-          <h1 className='my-4 font-weight-display-4 '>Sign Up</h1>
+          <h1 className='my-4 font-weight-display-4'>Sign Up</h1>
           <Form>
             <TextField label='First Name' name='firstName' type='text' />
             <TextField label='Last Name' name='lastName' type='text' />

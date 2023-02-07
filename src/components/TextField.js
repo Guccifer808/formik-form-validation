@@ -7,12 +7,14 @@ export const TextField = ({ label, ...props }) => {
     <div>
       <label htmlFor={field.name}>{label}</label>
       <input
-        className='form-control shadow-none'
+        className={`form-control shadow-none ${
+          meta.touched && meta.error && `is-invalid`
+        }`}
         autoComplete='off'
         {...field}
         {...props}
       />
-      <ErrorMessage name={field.name} />
+      <ErrorMessage name={field.name} component='div' className='error' />
     </div>
   );
 };
