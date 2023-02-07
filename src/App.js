@@ -8,6 +8,7 @@ function App() {
   return (
     <div className='container mt-3'>
       <div className='row'>
+        {/* Left side form */}
         <div className='col-md-5'>
           <SignUp />
         </div>
