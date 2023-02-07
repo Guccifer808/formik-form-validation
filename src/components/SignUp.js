@@ -32,7 +32,7 @@ export const SignUp = () => {
       onSubmit={(values) => console.log(values)}
     >
       {(formik) => (
-        <div className='me-4'>
+        <div>
           <h1 className='my-4 display-5 text-center'>Sign Up</h1>
           <Form>
             <TextField label='First Name' name='firstName' type='text' />
