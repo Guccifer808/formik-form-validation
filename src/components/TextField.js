@@ -4,7 +4,7 @@ export const TextField = ({ label, ...props }) => {
   const [field, meta] = useField(props);
 
   return (
-    <div>
+    <div className='mt-4'>
       <label htmlFor={field.name}>{label}</label>
       <input
         className={`form-control shadow-none ${

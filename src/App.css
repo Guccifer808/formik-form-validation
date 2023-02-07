@@ -9,11 +9,19 @@ label {
 }
 
 input.form-control, input.form-control:focus {
-  background: F0F0FF;
+  background: #F2F2F2;
+  min-width: 300px;
 }
 
 .error {
   position: absolute;
-  font-size: .6em;
+  font-size: .7em;
   color: red;
 }
+@media (max-width: 575.98px) {
+  .image {
+    display:none;
+  }
+
+}
+

@@ -32,8 +32,8 @@ export const SignUp = () => {
       onSubmit={(values) => console.log(values)}
     >
       {(formik) => (
-        <div>
-          <h1 className='my-4 font-weight-display-4'>Sign Up</h1>
+        <div className='me-4'>
+          <h1 className='my-4 display-5 text-center'>Sign Up</h1>
           <Form>
             <TextField label='First Name' name='firstName' type='text' />
             <TextField label='Last Name' name='lastName' type='text' />
@@ -44,12 +44,14 @@ export const SignUp = () => {
               name='confirmPassword'
               type='password'
             />
-            <button className='btn btn-dark mt-3' type='submit'>
-              Sign Up
-            </button>
-            <button className='btn btn-danger mt-3 ms-3' type='reset'>
-              Clear Form
-            </button>
+            <div className='d-flex justify-content-between mt-4'>
+              <button className='btn btn-danger' type='reset'>
+                Clear Form
+              </button>
+              <button className='btn btn-success' type='submit'>
+                Sign Up
+              </button>
+            </div>
           </Form>
         </div>
       )}
